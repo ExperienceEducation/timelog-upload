@@ -5,10 +5,7 @@ define('CONFIG_INCLUDES_ROOT', dirname($_SERVER['DOCUMENT_ROOT']));
 //// APPLICATION CONFIG ////
 
 // Non-Secure URL
-$config['base_url'] = $_SERVER['cwt_base_url'];
-
-// You will need to get a key for your hostname from http://code.google.com/apis/loader/signup.html
-$config['google_api_key'] = $_SERVER['cwt_google_api_key'];
+$config['base_url'] = 'https://timelogs.ithomas.name/';
 
 define('CONFIG_INCLUDES_CACHE', CONFIG_INCLUDES_ROOT . '/cache');
 
@@ -31,7 +28,7 @@ $config['smarty']['extra_modifiers'] = array (
 );
 
 // Automatically multiple time by this amount, e.g. to take account of management hours. 1.2 is a 20% increase.
-$config['time_adjustment'] = 1.2;
+$config['time_adjustment'] = 1;
 
 // Useful to exclude bank holidays etc
 $config['non-work_dates'] = array(
